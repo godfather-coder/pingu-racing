@@ -13,17 +13,13 @@
     		write("Draw!");
     		return;
     	}
-    	
-    	
     	for(int i =0;i<t/2;i++) {
-    		
-    		
-	    		if(pos_a%10==4) {
+		if(pos_a%10==4) {
 	    			sp_a/=2;
 	    			sp_a+=1;
 	    		}else {
 	    			sp_a +=7;
-	    		}//
+	    		}
 	    		
 	    		//bjarne speed changing
 	    		if(pos_b%13==0) {
@@ -31,21 +27,13 @@
 	    			sp_b+=1;
 	    		}else {
 	    			sp_b+=3;
-	    		}///
+	    		}
 	    		pos_a+=sp_a;
 	    		pos_b+=sp_b;
     	write("t = "+i);
     		write("Alan position = "+ pos_a+ "; speed = "+sp_a);    
     		write("Bjarne position = " + pos_b+"; speed = "+sp_b);
-	    	
-    	
-    	
-    	
-    	
-    	
-    	
-    	
-    	}// end of for loop t/2
+    }// end of for loop t/2
     	for(int i=t/2;i<t;i++) {//2nd half start
     		
     		if(i>=t-13 && i<t) {
@@ -53,7 +41,6 @@
     		}else {
     			sp_b-=1;
     		}
-    		
     		if(i==(3*t)/5 || i==(4*t)/5) {
     			sp_a/=4;
     		}else {
@@ -67,10 +54,6 @@
     		write("Bjarne position = " + pos_b+"; speed = "+sp_b);
     			
     	}//end lap
-    	
-    	
-    	
-    	
     	if(pos_a>pos_b) {
     		winner="Alan";
     	}else if(pos_a<pos_b) {
@@ -79,9 +62,5 @@
     		write("Draw!");
     	}
     	write(winner + " wins!");
-    	
-    	
-    	
-    	
     }
 }
